@@ -11,6 +11,16 @@ public class ArrayPractice {
                 System.out.println("even number ");
             }
         }
+        GreenEggs();
+    }
+    public static void GreenEggs(){
+        String greenEggs = "I would not, could not, in a box. " +
+                "I would not, could not with a fox. " +
+                "I will not eat them in a house. " +
+                "I will not eat them with a mouse.";
+        String[] arrOfStr = greenEggs.split(" ");
+        for (String a : arrOfStr)
+            System.out.println(a);
     }
 }
 
