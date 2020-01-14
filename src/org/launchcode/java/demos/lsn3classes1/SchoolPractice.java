@@ -62,11 +62,37 @@ public class SchoolPractice {
             public Course (String courseName, int courseNumberCode, String Student){
                 this.courseName = courseName;
                 this.courseNumberCode = courseNumberCode;
-                this.Student = Student;
+                this.Students = Students;
             }
+        }
+        class Teacher{
+            private String firstName;
+            private String lastName;
+            private String subject;
+            private int yearTeaching;
+
+            public String getFirstName() {
+                return firstName;
+            }
+            public void setFirstName(String aFirstName) {
+                firstName =  aFirstName;
+            }
+            public String getLastName(){
+                return lastName;
+            }
+            public void setLastName(String aLastName){
+                lastName = aLastName;
+            }
+            public String getSubject(){
+                return subject;
+            }
+            public void setSubject(String aSubject){
+                subject = aSubject;
+            }
+
         }
     }
 
-    Student.display();
+
 }
 
