@@ -55,7 +55,6 @@ public class Student {
         this.gpa = (4.0 * 3) + (grade * courseCredits);
 
     }
-
     // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
     //  than just the class fields.
 
