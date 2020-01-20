@@ -18,9 +18,11 @@ public class ArrayPractice {
                 "I would not, could not with a fox. " +
                 "I will not eat them in a house. " +
                 "I will not eat them with a mouse.";
-        String[] arrOfStr = greenEggs.split(" ");
-        for (String a : arrOfStr)
-            System.out.println(a);
+        String[] paragraph = greenEggs.split(" ");
+        for (String word : paragraph)
+            System.out.println(word);
     }
+
+
 }
 
