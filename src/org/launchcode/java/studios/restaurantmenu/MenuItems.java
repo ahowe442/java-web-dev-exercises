@@ -1,21 +1,21 @@
 package org.launchcode.java.studios.restaurantmenu;
 
-import java.time.LocalDateTime;
-
 public class MenuItems {
-    private float price;
+    private final int menuID;
+    private double price;
     private String description;
-    private String category; // change this to an enum class, will need to add this class.
-    private int year; // change this to date time now
+    private MenuCategory category; // change this to an enum class, will need to add this enum class.
+    private boolean isNewItem;
 
-    public MenuItems (float price, String description, String category, int year){
+    public MenuItems (int menuID, float price, String description, Enum category, int year, boolean isNewItem){
+        this.menuID = menuID;
         this.price = price;
         this.description = description;
-        this.category = category;
-        this.year = year;
+        this.category = (MenuCategory) category;
+        this.isNewItem = isNewItem;
     }
 
-    public float getPrice(){
+    public double getPrice() {
         return price;
     }
     public void setPrice(float price){
@@ -27,17 +27,21 @@ public class MenuItems {
     public void setDescription(String description){
         this.description = description;
     }
-    public String getCategory(){
-        return description;
+    public MenuCategory getCategory() {
+        return category;
     }
-    public void setCategory(String category){
+    public void setCategory(MenuCategory category) {
         this.category = category;
     }
-
-
-    // This part needs to be corrected or removed and added to a method that adds a new menuItem
-    // and stamps the  year at the same time.
-//    if (this.year >= 2019){
-//        System.out.println("New Menu Item");
-//    }
+    //return true if MenuItem is new and false if
+    //tells if a menu item is new.
+    public boolean isNewItem() {
+        return isNewItem;
+    }
+    public void setNewItem(boolean newItem) {
+        isNewItem = newItem;
+    }
+    public int getMenuID() {
+        return menuID;
+    }
 }
