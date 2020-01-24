@@ -22,9 +22,9 @@ public class MenuItems {
      * @param price       the price
      * @param category    the {@link MenuCategory}
      */
-    public MenuItems(int menuId, String description, double price, MenuCategory category) {
-        this(menuId, description, price, category, false);
-    }
+//    public MenuItems(int menuId, String description, double price, MenuCategory category) {
+//        this(menuId, description, price, category, false);
+//    }
 
     public double getPrice() {
         return price;
