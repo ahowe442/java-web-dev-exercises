@@ -1,6 +1,6 @@
 package readingnotes.chpt5;
 
-public static class Person {
+public class Person {
         String firstName;
         String lastName;
         int age;
