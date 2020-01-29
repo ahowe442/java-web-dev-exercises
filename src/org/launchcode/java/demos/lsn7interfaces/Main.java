@@ -29,11 +29,6 @@ public class Main {
         //  field.
         System.out.println("*******************************");
         System.out.println("\n*******************************");
-        for (Cone itemPrice : cones) {
-            System.out.println(itemPrice);
-        }
-        System.out.println("*******************************");
-        System.out.println("\n*******************************");
         cones.sort(new ConeComparator());
         for (Cone cost : cones) {
             System.out.println(cost);
